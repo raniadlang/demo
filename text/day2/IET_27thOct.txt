@@ -1,0 +1,61 @@
+JIRA - project management tool and defect management tool.
+
+licensed tool under Atlassian Company
+
+JIRA installation
+-----------------------------------
+Create a project using Scrum Template - Classic project
+
+req, task, testcase, defect, etc -- treated as "Issue" in JIRA
+
+Issue Types in JIRA:
+1. Story - single req
+2. Epic - large req - subdivided into user stories
+3. Test - Testcases
+4. Bug - defect
+5. Task - action performed by the users of JIRA.
+6. Subtask - task is divided into subtask
+-----------------------------------------------------
+Ex. GmailTestProject
+	
+Product Backlog 
+	Sign in, Sign up, Compose, Sentmails, Inbox, Trash, Drafts, Folders, Chat
+
+Sign in (Epic) can be broken down into :
+	Username verification(Story), Password verification(Story), Security code verification(Story)
+
+Compose (Epic):
+	Story : ComposeTextMail, ComposeImageAttachment, ComposeDriveAttachment
+
+Release Backlog : "version" in JIRA
+	Sign in, Sign up, Compose, Inbox, Sentmails
+
+-------------------------------------------------
+Create sprint
+
+Sprint1 - Sign in
+	Tasks
+		DesignUsernameVerification, WriteCodeUsernameVerification, 		PrepareTCUsernameVerification, ExecuteTCUsernameVerification
+
+Sprint2 - Compose
+
+-----------------------------------------------------------
+Steps to work with JIRA
+Create a project
+	Create version
+	Create epic
+		Create user stories(select the epic and version while creating)
+
+Create Sprints
+Add stories into the Sprint by dragging them from backlog section.
+
+Start the sprint
+
+Create Tasks
+note:	Select the sprint , epic while creating.Tasks after creation will appear in the backlog and To Do section
+
+Move the tasks from “To do” section to the other sections according to the work completed.
+Click on Complete the sprint.
+View the Graphs and Reports.
+-------------------------------------------------------------
+Assignment - SDLC - Configuration Management

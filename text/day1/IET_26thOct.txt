@@ -1,0 +1,158 @@
+AbcMail.com
+	Login
+		we will assume that username n pass is required only.
+we will start the devlopment.
+At the end there are high chances that the customer wont accept the product stating the customer needs some changes into it.
+All the resouces, time, etc factors are wasted.
+
+Can we develop any application without SDLC?
+yes we can. but there will many more problems faced by the team while releasing the applications.MAny risks factors are involved: quality, order of functions, defects, customer satisfaction, etc. to overcome this Software engg is introduced.
+
+
+
+Software Engg.
+
+What is Software?
+collection of programs which performs some tasks.
+
+While developing any application, the activities involved :
+Requirements : gather, analyse and verify
+DEsign the requirement, code , test n deliver.
+Who are involved, resources
+
+-----------------------------------------------------------------------------
+
+SDLC - Software Development Life Cycle
+Phases of SDLC:
+
+1. Requirement Gathering and Analysis
+	Requirement: need of a customer.
+	Business Analyst (BA) - responsible for gathering the requirements from the customer.
+	Gathers the req, analyses them and Prepares the documentation - BRS, SRS.
+
+	Why to analyse the requirements?
+		Helps to complete the stated requirement, to get the clarity, to remove the 				ambiguity, etc.
+
+	BRS - Business Requirement Specification - non technical document
+		holds all the requirements stated by the client in his/her language.
+		Customer - requirements :modules/ features to be developed, cost, time, platform, 		programming language, technologies.
+
+	BRS is then reviewed or verified.
+
+	SRS - Software Requirement Specification - technical document
+		sorted set of requirements: functional, security, UI, speed, compatibility, etc.
+		Cost - budget for each n every phase
+		Time - derive deadlines for each phase
+		resources needed, team needed, planning the activities.
+
+	SRS is then reviewed or verified.
+
+
+for example:Gmail.com
+Customer : i want a mailing system for my company. i want a module to receive the mails, delete the mails, to send the mails, save the mails.
+	
+BA suggests that u should keep a module for security reasons. 
+
+BRS -   Receive the mail
+	  do u want to sort them?	: Social networking like facebook, linked in, etc.
+				: important mails like verification emails, banking emails etc.
+	For deletion of mail	: Module to delete the mails or button should be displayed in 				  		received mails? After deleting do u want keep it as deleted 				  		mails or else delete them permanently?
+	Account creation : fn, ln, dob, username, pwd.
+	Login : username, pwd, otp.
+
+SRS - Functional req: receiving a mail, deleting a mail, creating account. logging in.
+	Security req: Login, OTP verification,Account creation confirm password
+	Compatibility: All available browsers for any type of system.
+	
+-----------------------------------------------------------------------------------------
+
+2. Design
+	designing the UI i.e look n feel or appearance of the application and flow in the 		application.
+	design the front end and back end.
+		Front end(FE) : UI
+		Back end(BE) : Database.
+
+	HLD - High Level Design Document - System Design
+		FE: Modules are derived with description and their interconnectivity.
+		BE: Databases with tables, tables with primary keys, relation between tables.
+ 
+	LLD - Low Level Design Document - Program Design
+		FE: Detailed description of the modules.
+		BE: tables with their columns and their datatypes.
+
+	Diagrams are also prepared like ER diagram, Activity Diagram, USe case diagram, Class 		diagram , Flow charts
+
+Example: Gmail.com
+HLD : Inbox, Trash, Sign in, Sign up, Compose.
+
+	Sign up -> Sign in -> Inbox -> view
+	Sign in -> Compose -> Sentmails
+	Sign in -> Inbox -> delete a mail -> Trash
+	Sign in -> Compose -> Drafts
+
+LLD : Sign up
+	First name	: alphabetical only, textbox
+	Last name	: alphabetical only, textbox
+	DOB		: numbers of specific range,  datepicker
+	Gender		: alphabetical only, radio button
+	USername	: alphanumeric only, textbox
+	Password	: combination of symbol alphabet number, min 8 characters, textbox, hidden
+	Confirm Password
+--------------------------------------------------------------------------------------------
+
+3. Coding
+	Developers write the code for the stated requirements using a particular programming.
+	Develops the application.
+	documents : source code
+
+4. Testing
+	Testers use their documents like Test cases, Test plan, Test scearios, test matrices, etc 	to test the application with the intent of finding the 		defects.
+	If defects found, report it to the developer, get them fixed and retest.
+	Confirms whether the application is ready to release.
+
+5. Installation
+	installation team installs the application on the client side provided with user manuals, 	instruction sets, etc.
+
+6. Maintenance
+	if there is any FAILURE after releasing the application to the client the it is reported 	in this phase.
+	upgradation request,modification. monitoring, support.
+
+--------------------------------------------------------------------------------------
+
+SDLC Model - Agile Model
+SDLC models can be categorized into two:
+	Sequential
+	Incremental/ Iterative
+
+Agile Model
+	iterative type of model.
+	time critical
+	Methodology of Agile - Scrum Methodology
+		Widely used.
+----------
+Search for Agile Methodologies - Assignment for today.
+----------
+
+Agile Scrum
+	Requirements Gathering - gather 100% requirements from the client.
+	Total requirements gathered - 100 requirements - 60 days.
+	Customer wants the application delivered in 4 releases.
+	Ask the client to prioritize the requirements for 4 releases.
+
+Ex: Gmail- sign in, sign up,trash, spammails, important mails, settings, profile, draft, inbox, compose, chat, starred mails, folders, aLL mails.
+	
+	30 req - Highest priority - 1st Release: 15 days -> inbox, compose, sign in, sign up, sentmails
+	20 req - High priority	- 2nd Release : 20 days
+	25 req - Moderate priority - 3rd Release : 10 days
+	25 req - Low priority - 4th Release : 15 days
+------------------------------------------------------------------------------------
+we have to start working: planning the 1st Release.
+30 req - Highest priority - 1st Release: 15 days -> inbox, compose, sign in and out, sign up, sentmails
+
+Based on the dependency of requirements, divide the req.
+sign up -> sign in -> inbox -> compose -> sentmails -> sign out.
+
+7 reqs: 3 days - design - coding - testing - Build1 - Customer Evaluation
+Build1 + 10 reqs : 5 days - design - coding - testing - Build2 - Customer Evaluation
+Build2 + 8 reqs : 4 days - design - coding - testing - Build3 - Customer Evaluation
+Build3 + 5 reqs : 3 days - design - coding - testing - Build4 / Release1 - Customer Evaluation
